@@ -8,24 +8,33 @@ const App = () => {
   return (
     <div id="main">
       <div>
-        <input
-          type="text"
-          id="contentInput"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <input
-          type="number"
-          id="fontSizeInput"
-          value={font}
-          onChange={(e) => setFont(e.target.value)}
-        />
-        <input
-          type="number"
-          id="paddingInput"
-          value={pad}
-          onChange={(e) => setPad(e.target.value)}
-        />
+        <div>
+          <label>Content</label>
+          <input
+            type="text"
+            id="contentInput"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Padding</label>
+          <input
+            type="number"
+            id="paddingInput"
+            value={pad}
+            onChange={(e) => setPad(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Font Size</label>
+          <input
+            type="number"
+            id="fontSizeInput"
+            value={font}
+            onChange={(e) => setFont(e.target.value)}
+          />
+        </div>
       </div>
 
       <Preview
